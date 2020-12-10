@@ -23,7 +23,7 @@ body {
   .table {
     width: 900px;
     max-width: calc(100% - 20px);
-    border: 8px solid rgb(10, 43, 2);
+    border: 8px solid rgb(66, 37, 3);
     border-radius: 20px;
     background: rgb(124, 238, 96);
     margin: 0 auto;
