@@ -1,28 +1,16 @@
 //Global Variables
-
+var theDeck = [];
+var playerHand =[];
+var dealerHand = [];
+var bank = 100;
+var betAmount = 0;
 
 window.addEventListener('DOMContentLoaded', function() {
   // Execute after page load
 })
 //Deck (incomplete)
-class deck {
-    constructor(){
-      this.deck = []
-      this.dealtCard = []
-    }
-
-    generateDeck(){
-
-      let card = (suit, value)  => {
-        this.name = value + 'of' + suit
-        this.suit = suit
-        this.value = value
-
-        return {name:this.name, suit:this.suit, value:this.value}
-      }
-
-      let values = 
-    }
+function Deal (){
+  
 }
 
 //Shuffle
