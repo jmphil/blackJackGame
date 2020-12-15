@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
     // Execute after page load
-  })
+})
 
 // create card
 
@@ -130,31 +130,30 @@ function dealToDealer() {
 
 
 // dealing cards function to start the game
-let dealButton = document.querySelector('#deal')
-dealButton.addEventListener('click', (e) => {
+function dealButton (() => {
+    
+    dealButton.addEventListener('click', function() {
+        gameStarted = true;
+        gameOver = false;
+        playerWon = false;
+        deck = createDeck();
         shuffleDeck();
-        dealToPlayer();
-        dealToDealer();
-        dealToPlayer();
-        dealToDealer();
+        dealerCards = [getNextCard(), getNextCard() ];
+        playerCards = [getNextCard(), getNextCard() ];
+        playerCards.push(getNextCard());
+        checkForEndOfGame();
+        showStatus();
+
+
+    })
+
 
 })
 
 
-
 // restart
 
-$('#restart').on('click', startGame);
 
-function startGame() {
-
-        createDeck();
-        shuffleDeck();
-        dealCards();
-
-        $('.player1 .table div:nth-of-type(1)').addClass('blocked');
-        $('.player1 .points').text('?');
-}
 
 
 
