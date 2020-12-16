@@ -130,25 +130,26 @@ function dealToDealer() {
 
 
 // dealing cards function to start the game
-function dealButton (() => {
+// function dealButton (() => {
     
-    dealButton.addEventListener('click', function() {
-        gameStarted = true;
-        gameOver = false;
-        playerWon = false;
-        deck = createDeck();
-        shuffleDeck();
-        dealerCards = [getNextCard(), getNextCard() ];
-        playerCards = [getNextCard(), getNextCard() ];
-        playerCards.push(getNextCard());
-        checkForEndOfGame();
-        showStatus();
+//     dealButton.addEventListener('click', function() {
+//         gameStarted = true;
+//         gameOver = false;
+//         playerWon = false;
+//         deck = createDeck();
+//         shuffleDeck();
+//         dealerCards = [getNextCard(), getNextCard() ];
+//         playerCards = [getNextCard(), getNextCard() ];
+//         playerCards.push(getNextCard());
+//         checkForEndOfGame();
+//         showStatus();
 
 
-    })
+//     })
 
 
-})
+// })
+
 
 
 // restart
